@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Lab 3</title>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="form-container">
+            <h1>Hotel Booking Form</h1>
+            <form>
+                <table>
+                    <tr>
+                        <td colspan="2"><h2>Guest Information</h2></td>
+                    </tr>
+                    <tr>
+                        <td><label for="name">Name:</label></td>
+                        <td><input type="text" id="name" name="name" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone Number:</label></td>
+                        <td><input type="tel" id="phone" name="phone" required></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><h2>Reservation Details</h2></td>
+                    </tr>
+                    <tr>
+                        <td><label for="arrival">Arrival Date:</label></td>
+                        <td><input type="date" id="arrival" name="arrival" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="departure">Departure Date:</label></td>
+                        <td><input type="date" id="departure" name="departure" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="room">Room Type:</label></td>
+                        <td>
+                            <select id="room" name="room" required>
+                                <option value="">-- Select Room --</option>
+                                <option value="single">Single</option>
+                                <option value="double">Double</option>
+                                <option value="suite">Suite</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Additional Services:</label></td>
+                        <td>
+                            <input type="checkbox" id="breakfast" name="services" value="breakfast">
+                            <label for="breakfast">Breakfast (+$10)</label><br>
+                            <input type="checkbox" id="wifi" name="services" value="wifi">
+                            <label for="wifi">Free Wi-Fi</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label>Payment Method:</label></td>
+                        <td>
+                            <input type="radio" id="cash" name="payment" value="cash" required>
+                            <label for="cash">Cash on Arrival</label><br>
+                            <input type="radio" id="credit" name="payment" value="credit">
+                            <label for="credit">Credit Card</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="id">Upload Image of Personal ID:</label></td>
+                        <td><input type="file" id="id" name="id"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="requests">Special Requests:</label></td>
+                        <td><textarea id="requests" name="requests" rows="4" placeholder="Enter any special requests here"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2"><input type="submit" value="Book Now"></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

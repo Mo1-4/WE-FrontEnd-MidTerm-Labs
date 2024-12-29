@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+}
+
+body{
+    background: url(../images/hero-bg.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 10rem;
+}
+
+nav .logo h1{
+    font-size: 2rem;
+    position: relative;
+}
+
+nav .logo h1::before{
+    content: '•';
+    color: chocolate;
+    position: absolute;
+    right: -0.7rem;
+    bottom: -0.5rem;
+}
+
+nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 2rem;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    padding: 5rem 10rem;
+    height: 70vh;
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.container p{
+    font-size: 1.5rem;
+}
+
+.container a{
+    padding: 1rem 2rem;
+    width: fit-content;
+    background: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.2rem;
+    border: 2px solid white;
+    transition: all 0.3s ease;
+}
+
+.container a:hover{
+    background: black;
+    color: white;
+}
+
+
+.d-block{
+    display: block;
+}
+
+@media (max-width: 1220px){
+    nav{
+        padding: 1rem 3rem;
+        justify-content: center;
+    }
+
+    .d-block{
+        display: inline;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    .container{
+        align-items: center;
+        text-align: center;
+        width: fit-content;
+        padding: 0 2rem;
+    }
+
+}
+
+
+@media (max-width: 500px){
+    .container h1{
+        font-size: 2rem;
+    }
+
+    .container p{
+        font-size: 1rem;
+    }
+
+    .container a{
+        padding: 0.5rem 1rem;
+        font-size: 1rem;
+    }
+}

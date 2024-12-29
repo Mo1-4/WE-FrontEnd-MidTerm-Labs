@@ -1,0 +1,49 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.hero-section {
+    background: url('../images/header-page.jpg') no-repeat center;
+    background-size: cover;
+    color: white;
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.hero-section h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.info-card {
+    background-color: #f8fbff;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.info-card i {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+.appointment-form {
+    background-color: #f8fbff;
+    border-radius: 8px;
+    padding: 2rem;
+}
+
+.appointment-form textarea {
+    resize: none;
+}
+
+footer {
+    background-color: #00173e;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+}
+
+footer a {
+    color: #007bff;
+    text-decoration: none;
+}

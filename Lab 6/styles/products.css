@@ -1,0 +1,67 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    background-color: #e7d7d7;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    place-content: center;
+    height: 100vh;
+    gap: 20px;
+    padding: 20px;
+}
+
+.card{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: column;
+    height: 500px;
+    justify-content: space-evenly;
+    background-color: #242543;
+    color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card .service-name h2{
+    padding: 10px;
+    border-bottom: 5px solid chocolate;
+    border-radius: 3px;
+    text-transform: uppercase;
+}
+
+.card .service-price h3{
+    font-size: 1.5rem;
+}
+
+.card .service-description p{
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.card .service-description p::before{
+    content: '•';
+    position: absolute;
+    color: chocolate;
+    left: -0.8rem;
+}
+
+.card .buy-btn a{
+    padding: 20px 30px;
+    text-align: center;
+    background-color: chocolate;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+}
