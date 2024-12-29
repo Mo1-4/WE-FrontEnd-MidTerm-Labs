@@ -1,0 +1,27 @@
+.bg-special {
+    background-color: #fecd2f;
+}
+
+.hero-section {
+    background: url(../Images/hero-bg.png) no-repeat center;
+    background-size: cover;
+    min-height: 90vh;
+    color: white;
+    display: grid;
+    place-items: center;
+    padding-bottom: 40px;
+}
+
+.hero-section p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.btn-custom {
+    background-color: white;
+    color: #333;
+    border: none;
+    font-weight: 600;
+    padding: 15px 30px;
+    border-radius: 30px;
+}

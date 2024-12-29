@@ -1,0 +1,56 @@
+.hero-section {
+    background-color: #f4f8f7;
+    text-align: left;
+}
+
+.hero-text {
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.product-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
+
+.product-price {
+    color: #0099cc;
+}
+
+.btn-dark:hover {
+    background-color: #333;
+}
+
+.head{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+#heroCarousel{
+    width: 50%;
+}
+
+@media (max-width: 768px) {
+    .hero-text {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .product-card img {
+        height: 200px;
+    }
+
+    .hero{
+        flex-direction: column;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #heroCarousel{
+        width: 100%;
+    }
+}

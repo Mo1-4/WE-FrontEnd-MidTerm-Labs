@@ -1,0 +1,39 @@
+.hero {
+    background: linear-gradient(rgba(8, 166, 69, 0.4), rgba(46, 162, 17, 0.3)), url(../Images/bg.png);
+    background-size: cover;
+    min-height: 75vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+.feature-box {
+    background-color: #72e16c;
+    border: 2px solid #393437;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+}
+
+.feature-box:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.product-section {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+}
+
+.product-image {
+    max-width: 100%;
+    height: auto;
+}
+
+@media (max-width: 768px) {
+    .hero{
+        flex-direction: column;
+        gap: 40px;
+    }
+}

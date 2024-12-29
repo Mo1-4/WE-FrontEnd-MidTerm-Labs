@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    background: white;
+}
+
+.container{
+    width: 600px;
+    min-height: 600px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    gap: 40px;
+    flex-direction: column;
+    padding: 15px 20px;
+    background-color: #f9f9f9;
+    border-radius: 5%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.head{
+    width: 100%;
+    padding: 10px 0;
+}
+
+.head h1{
+    color: #6045f9;
+}
+
+.container div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+}
+
+input, select{
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border: 2px solid #333;
+    font-size: 1.2rem;
+    color: #333;
+}
+
+#tipCalc{
+    width: 100%;
+    padding: 10px 0;
+    background-color: #6045f9;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.container p{
+    font-size: 1.6rem;
+    color: #006eff;
+    margin: 10px 0;
+    text-align: center;
+    font-weight: bold;
+}
+
+#notice{
+    color: red;
+    display: none;
+}
+
+
+@media (max-width: 768px) {
+    .container{
+        width: 95%;        
+    }
+    .head{
+        width: 95%;
+    }
+
+    .container .inputs{
+        gap: 20px;
+    }
+}
